@@ -16,6 +16,17 @@ import org.junit.Test;
 public class Demo2 {
 
 	@Test
+	public void test3() {
+		System.out.println(String[].class.getName());
+		System.out.println(String[].class.getSimpleName());
+		System.out.println(String[].class.getCanonicalName());
+		System.out.println("********************");
+		System.out.println(int[].class.getName());
+		System.out.println(int[].class.getSimpleName());
+		System.out.println(int[].class.getCanonicalName());
+	}
+
+	@Test
 	public void test2() throws NamingException, JMSException {
 		final InitialContext context = new InitialContext();
 		final TopicConnectionFactory topicConnectionFactory = (TopicConnectionFactory) context.lookup("TopicConnectionFactory");
